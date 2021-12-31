@@ -52,3 +52,15 @@ const analytics = getAnalytics(app);
 - Database 
 - https://console.firebase.google.com/project/```ngfirebase-ee485```/firestore/data/~2F
 
+
+
+
+
+
+## Create Angualr App
+- ```ng new ng-firebase```
+
+
+
+## Installing and Adding Firebase 
+```npm install --save firebase @angular/fire```

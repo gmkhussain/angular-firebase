@@ -1,0 +1,17 @@
+<p>policy-list works!</p>
+
+<table>
+    <thead>
+      <th>Number</th>
+      <th>Created At</th>
+      <th>Expire At</th>
+      <th>Amount</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let policy of policies">
+  
+        <td>{{policy.name}}</td>
+     
+      </tr>
+    </tbody>
+  </table>
