@@ -1,0 +1,26 @@
+<p>addnew works!</p>
+
+<form [formGroup]="this.form">
+    <input
+      placeholder="UID"
+      formControlName="uid"
+      type="text"
+    />
+
+    <input
+      placeholder="Name"
+      formControlName="name"
+      type="text"
+    />
+
+
+    <input
+      placeholder="Age"
+      formControlName="age"
+      type="text"
+    />
+
+    <button (click)="onSubmit()">
+      Submit
+    </button>
+  </form>
