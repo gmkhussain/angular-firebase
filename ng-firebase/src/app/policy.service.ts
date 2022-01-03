@@ -12,7 +12,9 @@ export class PolicyService {
   constructor(private firestore: AngularFirestore) { }
 
   getPolicies() {
+    
     console.log( "asdasd", this.firestore.collection('policies').snapshotChanges() )
+
     return this.firestore.collection('policies').snapshotChanges();
   }
 

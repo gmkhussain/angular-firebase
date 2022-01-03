@@ -2,16 +2,15 @@
 
 <table>
     <thead>
-      <th>Number</th>
-      <th>Created At</th>
-      <th>Expire At</th>
-      <th>Amount</th>
+      <th>Uid</th>
+      <th>Name</th>
+      <th>Age</th>
     </thead>
     <tbody>
       <tr *ngFor="let policy of policies">
-  
+        <td>{{policy.uid}}</td>
         <td>{{policy.name}}</td>
-     
+        <td>{{policy.age}}</td>
       </tr>
     </tbody>
   </table>

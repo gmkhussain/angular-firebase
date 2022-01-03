@@ -13,20 +13,22 @@ export class PolicyListComponent implements OnInit {
   constructor(private policyService: PolicyService) { }
 
   ngOnInit() {
-    this.policyService.getPolicies().subscribe(data => {
-      console.log(":A")
-      this.policies = data.map(e => {
-        
-        console.log("-----------", e.payload.doc )
 
-        return {
-          name: "e.payload.doc.name"
-        } as Policy;
+    this.policyService.getPolicies().subscribe(
+      data => {
+        console.log(":A")
+        this.policies = data.map(e => {
+        let data = e.payload.doc.data();
+        console.log("---", e.payload.doc.data() )
+        return e.payload.doc.data() as Policy;
       })
+        console.log( this.policies )
+      },
+      err => {
+        console.log( "Err", err )
+      }
+    );
 
-      console.log( this.policies )
-
-    });
   }
 
   create(policy: Policy){

@@ -19,7 +19,6 @@ import { PolicyListComponent } from './policy-list/policy-list.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase) // Your config
-
   ],
   providers: [],
   bootstrap: [AppComponent]
